@@ -1,0 +1,11 @@
+package pageObjects;
+
+import core.Base;
+
+public class RegisterPageObj extends Base{
+	
+	public RegisterPageObj() {
+		
+	}
+
+}

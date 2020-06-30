@@ -1,0 +1,68 @@
+package base;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+
+	public static WebDriver driver;
+	public static Properties properties; // we create an object of properties class so we can use it's method in the
+											// future. Ctrl+Click on Properties and it will take us to the class to see
+											// the method
+	public static Logger logger;
+
+	// first part of path (C:\Users\murta\eclipse-workspace\MavenProjectDemo) we can
+	// use "user.dir"
+	private String userDir = System.getProperty("user.dir"); // private because we use it in this class only
+	// get path to property file
+	private String pathToProperty = "\\src\\test\\resources\\InputData\\Property.properties";
+	// concatenate the path
+	private String ppFile = userDir + pathToProperty;
+
+	// create a constructor method for Base class
+	public Base() {
+		// create object of BufferReader class to read the property path
+		// initialize the properties obj
+		// use .load method of properties to load the file
+		// use .close method of BufferReader class to close the file reading
+		// use try and catch block to handle the exceptions
+
+		try {
+			// read the text by character from property file
+			BufferedReader reader;
+			// creating object of file reader and inside we will pass ppFile
+			reader = new BufferedReader(new FileReader(ppFile));
+			properties = new Properties();
+
+			// we use properties class to read the data inside properties
+			// surround it with try and catch so we can trace it
+			try {
+				properties.load(reader);
+
+				// once reading data is finished then we will close it
+				reader.close();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	// create new method and we cannot have that inside constructor
+
+	// get browser name from Property file we have hash there url is the key for the
+	// Hash - getter always has a return type
+	public static String getBrowserName() {
+		String browserName = properties.getProperty("browser");
+	return browserName;
+	}
+	
+	//public 
+}

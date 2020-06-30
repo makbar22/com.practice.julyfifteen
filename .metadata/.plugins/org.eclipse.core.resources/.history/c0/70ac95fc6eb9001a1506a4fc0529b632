@@ -1,0 +1,21 @@
+package stepDefinitions;
+import base.Base;
+
+//this class runs the before and after hook
+public class Initializer extends Base{
+
+	//before hooks: codes will run/apply before every scenario:
+	//initialize the browser
+	//set page load
+	//set timeout
+	//set windows size
+	public void beforeHooks() {
+		
+	}
+	
+	//after hooks: codes will run after each scenario:
+	//set to close browser
+	public void afterHooks() {
+		
+	}
+}

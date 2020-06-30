@@ -1,0 +1,28 @@
+package date06222020;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class StringQuestions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "abcdde";
+		char [] chars = str.toCharArray();
+		
+		Set<Character> temSet = new HashSet<Character>();
+		String subNoDup ="";
+		for (int i =0; i <chars.length; i++) {
+			if (temSet.add(chars[i])) {
+				subNoDup += chars[i];
+			}else {
+				break;
+				
+			}
+		}
+		System.out.println(subNoDup);
+
+	}
+
+}

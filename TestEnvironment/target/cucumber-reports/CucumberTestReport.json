@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login to My Account",
+        "description": "",
+        "id": "login-to-test-environment;login-to-my-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8198580699,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Test Environment Page",
+            "match": {
+              "location": "LoginStepDefinition.the_user_is_on_Test_Environment_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75587000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on MyAccount",
+            "match": {
+              "location": "LoginStepDefinition.user_click_on_MyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 327830400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on Login",
+            "match": {
+              "location": "LoginStepDefinition.user_click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192193100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters username \u0027sdet@tekschool.us\u0027 and password \u0027sdet\u0027",
+            "match": {
+              "location": "LoginStepDefinition.user_enters_username_sdet_tekschool_us_and_password_sdet()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422376801,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on Login button",
+            "match": {
+              "location": "LoginStepDefinition.user_click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 702994600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be on user dashboard",
+            "match": {
+              "location": "LoginStepDefinition.user_should_be_on_user_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@loginTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login to Test Environment",
+    "description": "",
+    "id": "login-to-test-environment",
+    "keyword": "Feature",
+    "uri": "C:/Users/murta/eclipse-workspace/TestEnvironment/src/main/java/Features/Login.feature"
+  }
+]

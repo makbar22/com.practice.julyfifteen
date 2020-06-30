@@ -1,0 +1,61 @@
+package date05122020;
+
+public class BreakAndContinue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("BREAK");
+		// BREAK - used in loops to end the loop
+
+		for (int i = 0; i < 10; i++) {
+			if (i == 5) {
+				break;
+			} else {
+				System.out.println(i);
+			}
+		}
+		System.out.println("\nCONTINUE");
+		// CONTINUE - will escape that iteration of the loop
+		for (int x = 0; x < 10; x++) {
+			if (x == 5) {
+				continue;
+			} else {
+				System.out.println(x);
+			}
+
+		}
+
+		// PRACTICE - Array of String {"test", "automation", "job", "test",
+		// "automation2", "job2", "test2"}
+		// Is there duplicate?
+		// Create a ForLoop
+		String data[] = { "test", "automation", "job", "test", "automation2", "test", "job2", "test2" };
+		outter: for (int z = 0; z < data.length; z++) {
+			inner: for (int j = z + 1; j < data.length; j++) {
+				if (data[z].equals(data[j])) {
+					// there is duplicate if true
+					System.out.println("there is a duplicate in the array");
+					System.out.println("value = " + data[z]);
+					System.out.println("indexes = " + z + " " + j);
+					break outter;
+				}
+			}
+		}
+
+		// another way ForEach
+		int count = 0;
+		outter: for (String outter : data) {
+			inner: for (String inner : data) {
+				if (outter.contentEquals(inner)) {
+					count++;
+					if (count > 1) {
+						System.out.println(inner + " value of the array is dup");
+						break outter;
+
+					}
+				}
+			}
+		}
+
+	}
+}

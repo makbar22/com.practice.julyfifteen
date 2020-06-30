@@ -1,0 +1,8 @@
+Feature: Test Environment 
+
+Scenario: Register Account for new user 
+	Given User is on TEST Environment page 
+	When User click on MyAccount
+	And User click on Register
+	And User fills Register form with below information
+	#|firstName|LastName|E-mail|Telephone|password

@@ -1,0 +1,4 @@
+url = http://tek-school.com/bank/
+browser = chrome
+pageLoad = 45
+implicitWait = 45

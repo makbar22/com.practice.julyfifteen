@@ -1,0 +1,63 @@
+package stepDefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import base.Base;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+//this class runs the before and after hook
+public class Initializer extends Base {
+
+	// before hooks: codes will run/apply before every scenario:
+	// initialize the browser
+	// set page load
+	// set timeout
+	// set windows size
+	public void beforeHooks() {
+		// all properties or codes which will execute before each scenario or scenario
+		// outline
+
+		// launch web browser using if/switch statement
+		String browserName = Base.getBrowserName();
+		switch (browserName) {
+		case "chrome":
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			break;
+
+		case "FF":
+			WebDriverManager.chromedriver().setup();
+			driver = new FirefoxDriver();
+			break;
+
+		case "IE":
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver();
+			break;
+
+		default:
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+
+		}
+
+		// maximize window and apply timeout
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(getPageLoad(), TimeUnit.SECONDS); // getPageLoad is the time in the
+																						// properties class to reduce
+																						// redundancy
+		driver.manage().timeouts().implicitlyWait(getImplicitWait(), TimeUnit.SECONDS); // same as getPageLoad
+
+	}
+
+	// after hooks: codes will run after each scenario:
+	// set to close browser
+	public void afterHooks() {
+		Base.tearDown();
+
+	}
+}
