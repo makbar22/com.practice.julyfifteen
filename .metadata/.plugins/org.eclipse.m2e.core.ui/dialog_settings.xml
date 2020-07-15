@@ -2,6 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\murta\eclipse-workspace\com.practice.five"/>
+			<item value="C:\Users\murta\eclipse-workspace\com.practice.three"/>
+			<item value="C:\Users\murta\eclipse-workspace\com.practice.two"/>
+			<item value="C:\Users\murta\eclipse-workspace\us.tekschool.testNG.sdet"/>
 			<item value="C:\Users\murta\eclipse-workspace\us.tekschool.bdd.sdet"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,17 +30,46 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.practice.seven.com.practice.seven"/>
+			<item value="com.practice.six.com.practice.six"/>
+			<item value="com.practice.five.com.practice.five"/>
+			<item value="com.practice.four.com.practice.four"/>
+			<item value="com.practice.three.com.practice.three"/>
+			<item value="com.practice.two.com.practice.two"/>
+			<item value="com.practice.one.com.practice.one"/>
+			<item value="us.tekschool.testNG.ddf.us.tekschool.testNG.sdet"/>
+			<item value="GITprojectPractice.GITprojectPractice"/>
+			<item value="GITprojectPractice.GITprojectPr"/>
 			<item value="com.demo.tek.MavenProjectDemo"/>
 			<item value="TekSchoolFramework"/>
 			<item value="TekSchoolFramework.TestEnvironment"/>
 			<item value="TestEnvironmentFramework.TestEnvironmentFramework"/>
 		</list>
 		<list key="groupId">
+			<item value="com.practice.seven"/>
+			<item value="com.practice.six"/>
+			<item value="com.practice.five"/>
+			<item value="com.practice.four"/>
+			<item value="com.practice.three"/>
+			<item value="com.practice.two"/>
+			<item value="com.practice.one"/>
+			<item value="us.tekschool.testNG.ddf"/>
+			<item value="GITprojectPractice"/>
 			<item value="com.demo.tek"/>
 			<item value="TekSchoolFramework"/>
 			<item value="TestEnvironmentFramework"/>
 		</list>
 		<list key="artifactId">
+			<item value="com.practice.seven"/>
+			<item value="com.practice.six"/>
+			<item value="com.practice.five"/>
+			<item value="com.practice.four"/>
+			<item value="com.practice.three"/>
+			<item value="com.practice.two"/>
+			<item value="com.practice.one"/>
+			<item value="us.tekschool.testNG.sdet"/>
+			<item value="GITprojectPractice"/>
+			<item value="GITprojectPr"/>
 			<item value="MavenProjectDemo"/>
 			<item value="TestEnvironment"/>
 			<item value="TestEnvironmentFramework"/>
@@ -78,6 +111,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\murta\Downloads\TestNG_framework_source_code_export\us.tekschool.testNG.sdet"/>
+			<item value="C:\Users\murta\eclipse-workspace\us.tekschool.bdd.sdet"/>
+			<item value="C:\Users\murta\OneDrive\Documents\GITrepo\2nd-practice"/>
 			<item value="C:\Users\murta\eclipse-workspace\us.tekschool.bdd.sdet\src\test\resources"/>
 		</list>
 		<list key="projectNameTemplate">

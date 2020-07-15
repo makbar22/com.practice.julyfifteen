@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Logger"/>
+		<item key="selection" value="WebDriver"/>
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
+		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="WebDriver"/>
+			<item value="float"/>
+			<item value="Float"/>
+			<item value="short"/>
+			<item value="Short"/>
+			<item value="byte"/>
+			<item value="Byte"/>
+			<item value="maven-compiler"/>
+			<item value="org.aspectj"/>
 			<item value="log4j2"/>
 			<item value="Logger"/>
 			<item value="log4j"/>
 			<item value="maven-cucumber-reporting"/>
 			<item value="Cucumber"/>
 			<item value="junit"/>
-			<item value="&lt;dependency&gt;"/>
-			<item value=""/>
 		</list>
 		<list key="replacehistory">
+			<item value="double"/>
+			<item value="Double"/>
+			<item value="long"/>
+			<item value="Long"/>
+			<item value="short"/>
+			<item value="Short"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

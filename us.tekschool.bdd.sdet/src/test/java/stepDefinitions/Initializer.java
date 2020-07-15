@@ -1,7 +1,6 @@
 package stepDefinitions;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -34,7 +33,7 @@ public class Initializer extends Base {
 
 		// windows management
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(getPLTimeout(), TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(getPLTimeOut(), TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(getImpwait(), TimeUnit.SECONDS);
 
 	}
@@ -45,5 +44,4 @@ public class Initializer extends Base {
 		Base.tearDown();
 
 	}
-
 }

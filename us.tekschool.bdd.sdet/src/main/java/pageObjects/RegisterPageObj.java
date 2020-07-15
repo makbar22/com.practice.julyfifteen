@@ -11,7 +11,7 @@ import utilities.DriverUtility;
 public class RegisterPageObj extends Base {
 
 	public RegisterPageObj() {
-		PageFactory.initElements(driver, this); // this give reference to this class
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(how = How.XPATH, using = "(//a[text()='Register'])[1]")
@@ -21,7 +21,7 @@ public class RegisterPageObj extends Base {
 	private WebElement firstNameField;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='input-lastname']")
-	private WebElement lasttNameField;
+	private WebElement lastNameField;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='input-email']")
 	private WebElement emailField;
@@ -33,13 +33,13 @@ public class RegisterPageObj extends Base {
 	private WebElement passwordField;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='input-confirm']")
-	private WebElement passwordConfirmField;
+	private WebElement passwordConfField;
 
 	@FindBy(how = How.XPATH, using = "(//input[@name='newsletter'])[1]")
-	private WebElement yesSubscibe;
+	private WebElement yesSubscribe;
 
 	@FindBy(how = How.XPATH, using = "(//input[@name='newsletter'])[2]")
-	private WebElement noSubscibe;
+	private WebElement noSubscribe;
 
 	@FindBy(how = How.XPATH, using = "//input[@name='agree']")
 	private WebElement privacyPolicy;
@@ -50,38 +50,43 @@ public class RegisterPageObj extends Base {
 	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Your Account Has Been Created!')]")
 	private WebElement yourAcctCreatedMessage;
 
-	// create methods
 	public void clickOnRegister() {
-		DriverUtility.clickOnElement(register); // we user DriverUtility methods to reduce redundancy
+		DriverUtility.clickonElement(register);
 	}
 
 	public void enterFNameValue(String fName) {
 		DriverUtility.enterText(firstNameField, fName);
+
 	}
 
 	public void enterLNameValue(String lName) {
-		DriverUtility.enterText(lasttNameField, lName);
+		DriverUtility.enterText(lastNameField, lName);
+
 	}
 
 	public void enterEmailValue(String email) {
 		DriverUtility.enterText(emailField, email);
+
 	}
 
-	public void entertelephoneValue(String telephone) {
+	public void enterTelephoneValue(String telephone) {
 		DriverUtility.enterText(telephoneField, telephone);
-	}
-
-	public void enterPasswordValue(String passord) {
-		DriverUtility.enterText(passwordField, passord);
 
 	}
 
-	public void passwordConfirmValue(String passwordConf) {
-		DriverUtility.enterText(passwordConfirmField, passwordConf);
+	public void enterpasswordValue(String password) {
+		DriverUtility.enterText(passwordField, password);
+
+	}
+
+	public void enterConfirmPassValue(String passwordConf) {
+		DriverUtility.enterText(passwordConfField, passwordConf);
+
 	}
 
 	public boolean noIsSelected() {
-		if (noSubscibe.isSelected()) {
+
+		if (noSubscribe.isSelected()) {
 			return true;
 		} else {
 			return false;
@@ -89,30 +94,32 @@ public class RegisterPageObj extends Base {
 	}
 
 	public void selectYesonSubscribe() {
-		DriverUtility.clickOnElement(yesSubscibe);
-	}
-
-	public void selectNoSubscribe() {
-		DriverUtility.clickOnElement(noSubscibe);
+		DriverUtility.clickonElement(yesSubscribe);
 	}
 
 	public boolean isPrivacyPolicyDisplayed() {
 		boolean displayed = DriverUtility.isElementDisplayed(privacyPolicy);
+
 		return displayed;
 	}
-
+	
 	public void clickonPrivacyPolicy() {
-		DriverUtility.clickOnElement(privacyPolicy);
+		DriverUtility.clickonElement(privacyPolicy);
 	}
-
+	
 	public void clickonContinueButtonREG() {
-
-		DriverUtility.clickOnElement(continueButtonReg);
+		
+		DriverUtility.clickonElement(continueButtonReg);
 	}
-
-	public String getSuccessfullAcctCreationMessage() {
-		String acctCreationMessage = DriverUtility.getText(yourAcctCreatedMessage);
+	
+	public String getSuccessfullAcctCreationMessage () {
+		String acctCreationMessage =DriverUtility.getText(yourAcctCreatedMessage);
 		return acctCreationMessage;
 	}
+	
+	public void selectNoSubscribe() {
+		DriverUtility.clickonElement(noSubscribe);
+	}
+	
 
 }

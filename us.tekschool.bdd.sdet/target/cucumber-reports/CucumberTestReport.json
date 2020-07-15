@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 6364429900,
+              "duration": 6011625500,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Register Account for new user",
+        "line": 5,
+        "name": "Register Account for new User",
         "description": "",
         "id": "test-environment;register-account-for-new-user",
         "after": [
           {
             "result": {
-              "duration": 721023200,
+              "duration": 657162000,
               "status": "passed"
             },
             "match": {
@@ -34,34 +34,34 @@
         "steps": [
           {
             "result": {
-              "duration": 1650360900,
+              "duration": 1645432500,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User is on TEST Environment page",
             "match": {
-              "location": "LoginStepDefinition.user_is_on_TEST_Environment_page()"
+              "location": "loginStepDefiniton.user_is_on_TEST_Environment_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 78940300,
+              "duration": 68148800,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User click on MyAccount",
             "match": {
-              "location": "LoginStepDefinition.user_click_on_MyAccount()"
+              "location": "loginStepDefiniton.user_click_on_MyAccount()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1227568700,
+              "duration": 1147630800,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "User click on Register",
             "match": {
               "location": "RegisterStepDefinition.user_click_on_Register()"
@@ -70,10 +70,10 @@
           },
           {
             "result": {
-              "duration": 986771200,
+              "duration": 478441100,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "User fills Register form with below information",
             "match": {
               "location": "RegisterStepDefinition.user_fills_Register_form_with_below_information(DataTable)"
@@ -87,27 +87,27 @@
                   "Telephone",
                   "password"
                 ],
-                "line": 9
+                "line": 10
               },
               {
                 "cells": [
-                  "Jamie",
-                  "Boon",
-                  "jbond37333@tegeett.com",
-                  "1313020007",
-                  "jemebond"
+                  "Jack",
+                  "MA",
+                  "jack.Ma@alibabea.com",
+                  "2025058899",
+                  "alibaba"
                 ],
-                "line": 10
+                "line": 11
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 450979600,
+              "duration": 79003500,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "User select \u0027yes\u0027 for Subscribe",
             "match": {
               "arguments": [
@@ -118,14 +118,14 @@
               ],
               "location": "RegisterStepDefinition.user_select_yes_for_Subscribe(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 468745400,
+              "duration": 444649200,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "User click privacy and policy button",
             "match": {
               "location": "RegisterStepDefinition.user_click_privacy_and_policy_button()"
@@ -134,28 +134,28 @@
           },
           {
             "result": {
-              "duration": 1011245000,
+              "duration": 581563700,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "User click Continue button",
             "match": {
-              "location": "RegisterStepDefinition.User_click_Continue_button()"
+              "location": "RegisterStepDefinition.user_click_Continue_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5378965000,
+              "duration": 5346717900,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User should see message \u0027Your Account Has Been Created!\u0027",
+            "line": 15,
+            "name": "User should see message  \u0027Your Account Has Been Created!\u0027",
             "match": {
               "arguments": [
                 {
                   "val": "Your Account Has Been Created!",
-                  "offset": 25
+                  "offset": 26
                 }
               ],
               "location": "RegisterStepDefinition.user_should_see_message_Your_Account_Has_Been_Created(String)"
@@ -165,7 +165,7 @@
         ],
         "tags": [
           {
-            "line": 3,
+            "line": 4,
             "name": "@registerTest"
           }
         ]
